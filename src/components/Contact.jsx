@@ -96,20 +96,18 @@ function Contact() {
 
             <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
               <h4 className="font-semibold mb-2">Location</h4>
-              <p className="text-gray-300">Surat, Gujarat, India</p>
-            </div>
-
-            {/* Google Map */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps?q=Surat,Gujarat,India&output=embed"
-                width="100%"
-                height="250"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              {/* Google Map */}
+              <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps?q=Surat,Gujarat,India&output=embed"
+                  width="100%"
+                  height="250"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
 
           </div>
