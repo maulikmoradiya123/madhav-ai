@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     // Loader timing (you can reduce to 1500 for better UX)
-    const timer = setTimeout(() => setLoading(false), 2000);
+    const timer = setTimeout(() => setLoading(false), 1500);
     return () => clearTimeout(timer);
   }, []);
 
@@ -67,7 +67,7 @@ function App() {
 
       {/* Footer */}
       <Footer />
-      
+
       {/* WhatsApp Floating Button */}
       <WhatsAppButton />
 
