@@ -1,7 +1,6 @@
 import React from 'react'
 import whatsappIcon from "../assets/whatsapp.png";
 
-
 function Contact() {
   const handleWhatsApp = (e) => {
     e.preventDefault();
@@ -10,7 +9,7 @@ function Contact() {
     const email = e.target.email.value;
     const message = e.target.message.value;
 
-    const phoneNumber = "447442070305"; // replace with your number
+    const phoneNumber = "447442070305";
 
     const text = `Hello, I am ${name}%0AEmail: ${email}%0AMessage: ${message}`;
 
@@ -18,17 +17,18 @@ function Contact() {
 
     window.open(url, "_blank");
   };
+
   return (
     <section
       id="contact"
-      className="py-24 px-6 border-t border-white/10 bg-[#0f172a]"
+      className="py-24 px-6 border-t border-white/10 bg-gradient-to-b from-[#0f172a] to-[#020617]"
     >
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
-          <p className="text-gray-400">
+          <p className="text-gray-300">
             Let’s discuss your project and build something amazing together
           </p>
         </div>
@@ -47,7 +47,7 @@ function Contact() {
                 name="name"
                 placeholder="Your Name"
                 required
-                className="w-full p-3 rounded bg-[#020617]"
+                className="w-full p-3 rounded-lg bg-[#020617] border border-white/10 focus:border-blue-500 outline-none"
               />
 
               <input
@@ -55,14 +55,15 @@ function Contact() {
                 name="email"
                 placeholder="Your Email"
                 required
-                className="w-full p-3 rounded bg-[#020617]"
+                className="w-full p-3 rounded-lg bg-[#020617] border border-white/10 focus:border-blue-500 outline-none"
               />
 
               <textarea
                 name="message"
+                rows="4"
                 placeholder="Your Message"
                 required
-                className="w-full p-3 rounded bg-[#020617]"
+                className="w-full p-3 rounded-lg bg-[#020617] border border-white/10 focus:border-blue-500 outline-none"
               ></textarea>
 
               <button
@@ -80,32 +81,43 @@ function Contact() {
             </form>
           </div>
 
-          {/* Right - Info */}
-          <div className="flex flex-col justify-center space-y-6">
+          {/* Right - Info + Map */}
+          <div className="flex flex-col space-y-6">
 
             <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
               <h4 className="font-semibold mb-2">Email</h4>
-              <p className="text-gray-400">dhruvang.moradiya17@gmail.com</p>
+              <p className="text-gray-300">dhruvang.moradiya17@gmail.com</p>
             </div>
 
             <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
               <h4 className="font-semibold mb-2">Phone</h4>
-              <p className="text-gray-400">+44 7442 070305</p>
+              <p className="text-gray-300">+44 7442 070305</p>
             </div>
 
             <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
               <h4 className="font-semibold mb-2">Location</h4>
-              <p className="text-gray-400">India</p>
+              <p className="text-gray-300">Surat, Gujarat, India</p>
+            </div>
+
+            {/* Google Map */}
+            <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps?q=Surat,Gujarat,India&output=embed"
+                width="100%"
+                height="250"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
 
           </div>
+
         </div>
       </div>
     </section>
-    
   );
-
-
 }
 
-export default Contact
+export default Contact;
