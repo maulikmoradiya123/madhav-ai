@@ -19,8 +19,8 @@ function Services() {
           <div
             key={i}
             className="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl 
-hover:scale-105 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 
-transition duration-300"
+              hover:scale-105 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 
+              transition duration-300"
           >
             <h3 className="text-xl font-semibold mb-3">
               {s.title}
