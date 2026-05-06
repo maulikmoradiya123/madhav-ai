@@ -5,7 +5,8 @@ import Services from "./components/Services";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import WhatsAppButton from "./components/WhatsAppButton";
+// import WhatsAppButton from "./components/WhatsAppButton";
+import logo from './assets/logo_new.png';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -20,7 +21,8 @@ function App() {
   if (loading) {
     return (
       <div className="h-screen flex flex-col items-center justify-center bg-[#0b1220] text-white">
-        <h1 className="text-3xl font-bold mb-4">Madhav AI Technologies</h1>
+        {/* <h1 className="text-3xl font-bold mb-4">Madhav AI Technologies</h1> */}
+        <img src={logo} className="w-50 h-50"/>
         <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
       </div>
     );
@@ -46,7 +48,7 @@ function App() {
 
       {/* Services */}
       <div className="bg-[#0f172a]">
-        <Services />
+        <About />
       </div>
 
       {/* Divider */}
@@ -54,7 +56,7 @@ function App() {
 
       {/* About */}
       <div className="bg-[#111827]">
-        <About />
+        <Services />
       </div>
 
       {/* Divider */}
@@ -69,7 +71,7 @@ function App() {
       <Footer />
 
       {/* WhatsApp Floating Button */}
-      <WhatsAppButton />
+      {/* <WhatsAppButton /> */}
 
     </div>
   );

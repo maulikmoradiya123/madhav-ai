@@ -21,7 +21,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 px-6 border-t border-white/10 bg-gradient-to-b from-[#0f172a] to-[#020617]"
+      className="py-30 px-6 border-t border-white/10 bg-gradient-to-b from-[#0f172a] to-[#020617]"
     >
       <div className="max-w-6xl mx-auto">
 
@@ -99,7 +99,7 @@ function Contact() {
               {/* Google Map */}
               <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps?q=Surat,Gujarat,India&output=embed"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241802.67773563418!2d-0.3820782095868715!3d51.522829574242294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e1!3m2!1sen!2sin!4v1778042124555!5m2!1sen!2sin"
                   width="100%"
                   height="250"
                   style={{ border: 0 }}

@@ -9,7 +9,7 @@ const services = [
 
 function Services() {
   return (
-    <section id="services" className="py-20 px-6">
+    <section id="services" className="py-30 px-6">
       <h2 className="text-4xl text-center font-bold mb-12">
         Our Services
       </h2>

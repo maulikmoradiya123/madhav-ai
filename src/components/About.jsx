@@ -1,33 +1,76 @@
-import React from 'react'
+import React from "react";
 
 function About() {
   return (
-    <section id="about" className="py-24 px-6 text-center border-t border-white/10 bg-[#111827]">
+    <section
+      id="about"
+      className="py-30 px-6 bg-gradient-to-b from-[#111827] to-[#020617] border-t border-white/10"
+    >
+      <div className="max-w-6xl mx-auto">
 
-      <h2 className="text-4xl font-bold mb-6">About Us</h2>
+        {/* Heading */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            About <span className="text-blue-500">Us</span>
+          </h2>
+          <p className="text-gray-300 max-w-2xl mx-auto">
+            We build scalable, modern, and high-performance digital solutions for growing businesses.
+          </p>
+        </div>
 
-      <p className="text-gray-400 max-w-3xl mx-auto mb-6 leading-relaxed">
-        Madhav AI Technologies is a technology-driven company focused on building
-        modern, scalable, and high-performance digital solutions. We specialize
-        in web development, software development, and AI-powered systems that
-        help businesses streamline operations and grow faster in a competitive market.
-      </p>
+        {/* Content Grid */}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
 
-      <p className="text-gray-400 max-w-3xl mx-auto mb-6 leading-relaxed">
-        Our approach is simple — understand the client’s problem deeply and deliver
-        practical, efficient, and future-ready solutions. We focus on clean code,
-        performance, and user experience to ensure every product we build creates
-        real value.
-      </p>
+          {/* Left - Text */}
+          <div className="space-y-6 text-gray-300 leading-relaxed">
+            <p>
+              Madhav AI Technologies is a technology-driven company focused on building
+              modern, scalable, and high-performance digital solutions. We specialize
+              in web, software, and AI-powered systems that help businesses grow faster.
+            </p>
 
-      <p className="text-gray-400 max-w-3xl mx-auto leading-relaxed">
-        Whether you are a startup looking to launch quickly or an established business
-        aiming to upgrade your technology, Madhav AI Technologies provides reliable
-        and cost-effective solutions tailored to your needs.
-      </p>
+            <p>
+              Our approach is simple understand the problem deeply and deliver
+              practical, efficient, and future-ready solutions with clean code
+              and great user experience.
+            </p>
 
+            <p>
+              Whether you're a startup or an established business, we provide
+              reliable and cost-effective solutions tailored to your needs.
+            </p>
+          </div>
+
+          {/* Right - Feature Cards */}
+          <div className="grid grid-cols-1 gap-6">
+
+            <div className="bg-white/5 border border-white/10 p-6 rounded-xl backdrop-blur hover:scale-105 transition">
+              <h3 className="text-white font-semibold mb-2">🚀 Scalable Solutions</h3>
+              <p className="text-gray-400 text-sm">
+                Built to grow with your business using modern technologies.
+              </p>
+            </div>
+
+            <div className="bg-white/5 border border-white/10 p-6 rounded-xl backdrop-blur hover:scale-105 transition">
+              <h3 className="text-white font-semibold mb-2">⚡ High Performance</h3>
+              <p className="text-gray-400 text-sm">
+                Optimized for speed, efficiency, and smooth user experience.
+              </p>
+            </div>
+
+            <div className="bg-white/5 border border-white/10 p-6 rounded-xl backdrop-blur hover:scale-105 transition">
+              <h3 className="text-white font-semibold mb-2">🤖 AI Driven</h3>
+              <p className="text-gray-400 text-sm">
+                Smart solutions powered by AI to automate and scale operations.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
     </section>
   );
 }
 
-export default About
+export default About;
