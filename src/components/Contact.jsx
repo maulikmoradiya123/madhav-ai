@@ -21,7 +21,8 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="py-30 px-6 border-t border-white/10 bg-gradient-to-b from-[#0f172a] to-[#020617]"
+      // className="py-30 px-6 border-t border-white/10 bg-gradient-to-b from-[#0f172a] to-[#020617]"
+      className="py-30 px-6 bg-gradient-to-b from-[#111827] to-[#020617] border-t border-white/10"
     >
       <div className="max-w-6xl mx-auto">
 
