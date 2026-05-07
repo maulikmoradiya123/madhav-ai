@@ -2,7 +2,7 @@ import logo from "../assets/logo_new.png";
 
 function Navbar() {
     return (
-        <nav className="flex justify-between items-center px-8 md:px-12 py-4 backdrop-blur-md bg-[#0f172a]/80 sticky top-0 z-50 border-b border-white/10">
+        <nav className="flex justify-between items-center px-8 md:px-12 py-3 backdrop-blur-md bg-[#0f172a]/50 sticky top-0 z-50 border-b border-white/20">
 
             {/* Logo */}
             <a href="#" className="relative flex items-center group">
