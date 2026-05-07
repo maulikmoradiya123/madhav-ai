@@ -27,7 +27,7 @@ function Hero() {
           <img
             src={heroImage}
             alt="AI Illustration"
-            className="w-full max-w-xlg rounded-xl shadow-lg transition transform hover:scale-105 border-0"
+            className="w-full max-w-xlg rounded-xl shadow-lg transition transform border-0"
           />
         </div>
 

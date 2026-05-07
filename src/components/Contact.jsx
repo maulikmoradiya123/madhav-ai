@@ -27,7 +27,7 @@ function Contact() {
 
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
+          <h2 className="text-4xl font-bold mb-4">Contact <span className="text-blue-500">Us</span></h2>
           <p className="text-gray-300">
             Let’s discuss your project and build something amazing together
           </p>
@@ -86,12 +86,12 @@ function Contact() {
 
             <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
               <h4 className="font-semibold mb-2">Email</h4>
-              <p className="text-gray-300">dhruvang.moradiya17@gmail.com</p>
+              <p className="text-gray-300">madhavaitechnologies@gmail.com</p>
             </div>
 
             <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
               <h4 className="font-semibold mb-2">Phone</h4>
-              <p className="text-gray-300">+44 7442 070305</p>
+              <p className="text-gray-300">+44 7833 816962</p>
             </div>
 
             <div className="bg-white/5 border border-white/10 p-6 rounded-xl">

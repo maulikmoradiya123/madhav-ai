@@ -12,18 +12,45 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Loader timing (you can reduce to 1500 for better UX)
-    const timer = setTimeout(() => setLoading(false), 1500);
+    const timer = setTimeout(() => setLoading(false), 2000);
     return () => clearTimeout(timer);
   }, []);
 
-  // 🔄 Loader Screen
   if (loading) {
     return (
-      <div className="h-screen flex flex-col items-center justify-center bg-[#0b1220] text-white">
-        {/* <h1 className="text-3xl font-bold mb-4">Madhav AI Technologies</h1> */}
-        <img src={logo} className="w-50 h-50"/>
-        <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+      <div className="h-screen flex items-center justify-center bg-gradient-to-b from-[#020617] via-[#0b1220] to-[#111827] overflow-hidden">
+
+        {/* Glow Background */}
+        <div className="absolute w-72 h-72 bg-blue-500 opacity-20 blur-3xl rounded-full"></div>
+
+        {/* Content */}
+        <div className="relative flex flex-col items-center">
+
+          {/* Logo */}
+          <div className="animate-pulse">
+            <img
+              src={logo}
+              alt="Logo"
+              className="w-40 h-40 object-contain"
+            />
+          </div>
+
+          {/* Company Name */}
+          <h1 className="text-3xl font-bold text-white mt-4 tracking-wide">
+            Madhav AI Technologies
+          </h1>
+
+          {/* Loading Bar */}
+          <div className="w-64 h-1.5 bg-white/10 rounded-full overflow-hidden mt-6">
+              <div className="h-full bg-blue-500 rounded-full animate-progressBar"></div>
+          </div>
+
+          {/* Small Text */}
+          <p className="text-gray-400 text-sm mt-4 tracking-widest">
+            INITIALIZING EXPERIENCE...
+          </p>
+
+        </div>
       </div>
     );
   }

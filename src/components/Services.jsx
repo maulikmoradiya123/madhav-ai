@@ -11,7 +11,7 @@ function Services() {
   return (
     <section id="services" className="py-30 px-6">
       <h2 className="text-4xl text-center font-bold mb-12">
-        Our Services
+        <span className="text-blue-500">Our</span> Services
       </h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -30,8 +30,8 @@ function Footer() {
                 {/* Contact */}
                 <div>
                     <h3 className="text-white font-medium mb-4">Contact</h3>
-                    <p className="text-sm">Email : dhruvang.moradiya17@gmail.com</p>
-                    <p className="text-sm">Phone : +44 7442 070305</p>
+                    <p className="text-sm">Email : madhavaitechnologies@gmail.com</p>
+                    <p className="text-sm">Phone : +44 7833 816962</p>
                 </div>
 
             </div>
