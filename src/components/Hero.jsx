@@ -21,7 +21,7 @@ function Hero() {
       <div className="relative z-10 max-w-4xl">
 
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white">
-          Build <span className="text-blue-500">Smart</span> Digital Solutions
+          Build <span className="text-blue-500">Smart</span> Digital Solutionsssssss
         </h1>
 
         <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-8">
