@@ -61,7 +61,7 @@ function Contact() {
 
               <textarea
                 name="message"
-                rows="4"
+                rows="9"
                 placeholder="Your Message"
                 required
                 className="w-full p-3 rounded-lg bg-[#020617] border border-white/10 focus:border-blue-500 outline-none"
@@ -87,7 +87,7 @@ function Contact() {
 
             <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
               <h4 className="font-semibold mb-2">Email</h4>
-              <p className="text-gray-300">madhavaitechnologies@gmail.com</p>
+              <a href='mailto:madhavaitechnologies@gmail.com' className="text-gray-300">madhavaitechnologies@gmail.com</a>
             </div>
 
             <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
