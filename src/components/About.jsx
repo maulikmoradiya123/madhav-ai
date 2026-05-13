@@ -15,7 +15,7 @@ function About() {
         {/* Heading */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-5">
-            About <span className="text-blue-500">Madhav AI Technologies</span>
+            About <span className="text-blue-500">Us</span>
           </h2>
 
           <p className="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">

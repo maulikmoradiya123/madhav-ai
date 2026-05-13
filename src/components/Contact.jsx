@@ -22,8 +22,12 @@ function Contact() {
     <section
       id="contact"
       // className="py-30 px-6 border-t border-white/10 bg-gradient-to-b from-[#0f172a] to-[#020617]"
-      className="py-30 px-6 bg-gradient-to-b from-[#111827] to-[#020617] border-t border-white/10"
+      className="relative py-28 px-6 bg-gradient-to-b from-[#0f172a] via-[#111827] to-[#020617] border-t border-white/10 overflow-hidden"
     >
+      {/* Background Glow */}
+      <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 blur-3xl rounded-full"></div>
+      <div className="absolute bottom-10 right-10 w-72 h-72 bg-cyan-500/10 blur-3xl rounded-full"></div>
+
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}
