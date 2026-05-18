@@ -1,46 +1,123 @@
 
-import heroImage from "../assets/hero_img.jpg"; // add your image here
-
+import bgVideo from "../assets/hero_video.mp4";
 
 function Hero() {
   return (
-    <section
-      className="relative min-h-screen flex items-center justify-center text-center px-6 bg-cover bg-center"
-      style={{
-        backgroundImage: `url(${heroImage})`,
-      }}
-    >
+    <section className="relative h-screen overflow-hidden flex items-center justify-center">
+
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source src={bgVideo} type="video/mp4" />
+      </video>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/70"></div>
 
-      {/* Blue Glow */}
-      <div className="absolute w-96 h-96 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
+      {/* Animated Glow */}
+      <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+
+      <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl">
+      <div className="relative z-10 text-center px-6 max-w-4xl">
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white">
+        <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
           Build <span className="text-blue-500">Smart</span> Digital Solutions
         </h1>
 
-        <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-8">
-          We create powerful web, software, and AI solutions to help your business grow faster.
+        <p className="text-gray-300 text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
+          We create powerful web, software, and AI solutions
+          to help businesses grow faster in the digital world.
         </p>
 
-        <a
-          href="#contact"
-          className="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl transition duration-300 shadow-lg hover:shadow-blue-500/30"
-        >
-          Get Started
-        </a>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
 
+          <a
+            href="#contact"
+            className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl transition duration-300 shadow-lg hover:shadow-blue-500/40"
+          >
+            Get Started
+          </a>
+
+        </div>
       </div>
     </section>
   );
 }
 
 export default Hero;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import heroImage from "../assets/hero_img.jpg"; // add your image here
+
+
+// function Hero() {
+//   return (
+//     <section
+//       className="relative min-h-screen flex items-center justify-center text-center px-6 bg-cover bg-center"
+//       style={{
+//         backgroundImage: `url(${heroImage})`,
+//       }}
+//     >
+
+//       {/* Dark Overlay */}
+//       <div className="absolute inset-0 bg-black/60"></div>
+
+//       {/* Blue Glow */}
+//       <div className="absolute w-96 h-96 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
+
+//       {/* Content */}
+//       <div className="relative z-10 max-w-4xl">
+
+//         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white">
+//           Build <span className="text-blue-500">Smart</span> Digital Solutions
+//         </h1>
+
+//         <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-8">
+//           We create powerful web, software, and AI solutions to help your business grow faster.
+//         </p>
+
+//         <a
+//           href="#contact"
+//           className="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl transition duration-300 shadow-lg hover:shadow-blue-500/30"
+//         >
+//           Get Started
+//         </a>
+
+//       </div>
+//     </section>
+//   );
+// }
+
+// export default Hero;
 
 
 
