@@ -91,7 +91,7 @@ function Contact() {
 
             <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
               <h4 className="font-semibold mb-2">Email</h4>
-              <a href='mailto:madhavaitechnologies@gmail.com' className="text-gray-300">madhavaitechnologies@gmail.com</a>
+              <a href='mailto:info@madhavaitechnologies.com' className="text-gray-300">info@madhavaitechnologies.com</a>
             </div>
 
             <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
